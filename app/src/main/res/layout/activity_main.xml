@@ -25,8 +25,10 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="97dp"
         android:layout_marginTop="251dp"
+        android:layout_marginBottom="38dp"
         android:background="#FF3F51B5"
         android:text="Recycle View Demo"
+        app:layout_constraintBottom_toTopOf="@+id/userButton"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -41,5 +43,18 @@
         app:layout_constraintBottom_toTopOf="@+id/recycleViewDemo"
         app:layout_constraintStart_toStartOf="@+id/recycleViewDemo"
         tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+    <Button
+        android:id="@+id/userButton"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="45dp"
+        android:layout_marginEnd="45dp"
+        android:layout_marginBottom="317dp"
+        android:text="Displaying user detail using gson and web request"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/recycleViewDemo" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

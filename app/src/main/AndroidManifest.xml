@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     package="com.example.learnandroid">
 
     <uses-permission android:name="android.permission.VIBRATE" />
@@ -13,6 +14,16 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.LearnAndroid">
+        <activity
+            android:name=".UserRecyclerActivity"
+            android:exported="true" />
+        <activity
+            android:name=".UserLayoutActivity"
+            android:exported="true" />
+        <activity
+            android:name=".UserActivity"
+            android:exported="true"
+            tools:ignore="Instantiatable" />
         <activity
             android:name=".RecyclerActivity"
             android:exported="true" />
